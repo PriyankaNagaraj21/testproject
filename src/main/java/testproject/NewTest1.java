@@ -16,6 +16,7 @@ public class NewTest1 {
 		driver.findElement(By.id("password")).sendKeys("SuperSecretPassword!");
 		driver.findElement(By.className("radius")).click();
 		boolean isDisp = driver.findElement(By.cssSelector("div.flash.success")).isDisplayed();
+		System.out.println("page title " + driver.getTitle());
 		Assert.assertTrue(isDisp);
   }
 }
